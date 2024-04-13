@@ -1,0 +1,11 @@
+.photos-content__grid.grid-content {
+	display: grid;
+	grid-auto-flow: row dense;
+	grid-template-columns: repeat(6, 1fr);
+
+	height: 1220px;
+	width: 1220px;
+	grid-gap: 10px;
+	margin: 0 auto;
+	padding: 0;
+}

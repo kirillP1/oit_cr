@@ -1,0 +1,82 @@
+#header {
+	width: 100%;
+	height: 80vh;
+	padding: 0;
+}
+
+.top-menu {
+	position: absolute;
+	z-index: 4;
+	padding: 1.5rem 2rem;
+	margin-top: -2px;
+
+	width: 100%;
+	border-bottom: 1px solid var(--white-color);
+
+	transform: translateY(-100%);
+
+	transition-property: transform;
+	transition-duration: 0.2s;
+}
+.top-menu::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	filter: blur(1px);
+}
+
+.top-menu nav {
+	z-index: 3;
+	position: relative;
+}
+
+.top-menu__container {
+	max-width: 1220px;
+	margin: auto;
+}
+
+.top-menu__ul {
+	display: flex;
+	gap: 55px;
+	list-style-type: none;
+}
+.top-menu__li {
+	font-size: 1.2rem;
+}
+.top-menu__li > a {
+	text-decoration: none;
+	color: var(--white-color);
+	transition-property: color;
+	transition-duration: 0.2s;
+}
+
+.top-menu__li_active > a,
+.top-menu__li:hover > a {
+	color: var(--green-light-color);
+}
+
+.top-menu_active {
+	position: fixed;
+	transform: translateY(0);
+}
+
+.header-h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 60vh;
+
+	font-size: 8vmin;
+	text-align: center;
+	color: var(--white-color);
+	text-shadow: 1px 1px 25px var(--green-light-color);
+
+	position: relative;
+	z-index: 2;
+}
+.header-h1 > h1 {
+	font-weight: 300;
+}

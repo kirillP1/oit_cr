@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	width: 100%;
+}
+
+.parallax {
+	height: 60vh;
+	overflow-y: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	height: 60vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	filter: blur(1px);
+}
